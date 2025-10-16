@@ -1,0 +1,113 @@
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* リンクの下線を消す */
+}
+
+/* ロゴ画像サイズ調整 */
+.brand-logo {
+  height: 65px;      /* ← 小さめのサイズ（例：40px） */
+  width: auto;       /* 縦横比を自動維持 */
+  display: block;    /* 不要な余白をなくす */
+}
+
+.nav-toggle {
+  height: 30px;
+  width: auto;
+}
+
+/* 初期状態ではメニュー非表示 */
+.nav-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+/* メニューを開いた時（JavaScriptで .active を追加する） */
+.nav-list.active {
+  display: block;
+}
+
+/* メニュー項目の見た目 */
+.nav-list li {
+  border-bottom: 1px solid #444;
+}
+
+.nav-list a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  background-color: #555;
+}
+
+input[type="number"] {
+  width: 75px;
+  padding: 6px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h1 {
+  background: linear-gradient(90deg, #1c29da, #5688e6);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1.8em;
+}
+
+h2{
+  text-decoration: underline;           /* 下線を引く */
+  text-decoration-color: #1874b5;       /* 下線の色を赤に */
+  text-decoration-thickness: 4px;       /* 下線の太さ */
+  text-underline-offset: 6px;           /* 文字と線の間隔を広げる */
+}
+
+.buff-img {
+  width: 180px;
+  height: auto;
+}
+
+.highlight-box {
+  display: inline-block;
+  border: 2px solid #4caf50;  /* 緑の枠 */
+  background-color: #f1f8e9;  /* 薄い緑の背景 */
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.result-box {
+  display: inline-block;
+  border: 2px solid #f7ca87;
+  background-color: #f4f2dd;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#calc-highlight {
+  font-size: 1.45rem;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red{
+  color: #d9534f;
+}
+
+.buff-btn {
+  padding: 4px 8px;
+  font-size: 1rem;
+  margin: 4px 2px;
+}
